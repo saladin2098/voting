@@ -27,6 +27,6 @@ type PublicVoteI interface {
 	DeletePublicVotes(pv *pb.ById) (*pb.Void, error)
 	UpdatePublicVotes(pv *pb.PublicVote) (*pb.Void, error)
 	GetByIdPublicVote(id *pb.ById) (*pb.PublicVote, error) 
-	GetAllPublicVotes(filter *pb.Filter) (*pb.GetAllPublicVote, error)
+	GetAllPublucVotes(filter *pb.Filter) (*pb.GetAllPublicVote, error)
 	FindWinner(we *pb.WhichElection) (*pb.Winner, error) 
 }

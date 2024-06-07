@@ -97,7 +97,7 @@ func (ps *PublicVotesStorage) GetByIdPublicVote(id *pb.ById) (*pb.PublicVote, er
 	}
 	return &pv, nil
 }
-func (ps *PublicVotesStorage) GetAllPublicVotes(filter *pb.Filter) (*pb.GetAllPublicVote, error) {
+func (ps *PublicVotesStorage) GetAllPublucVotes(filter *pb.Filter) (*pb.GetAllPublicVote, error) {
 	query := `select 
         id, 
         election_id, 

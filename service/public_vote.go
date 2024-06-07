@@ -30,8 +30,8 @@ func (ps *PublicVoteService) UpdatePublicVote(ctx context.Context,pv *pb.PublicV
 func (ps *PublicVoteService) GetByIdPublicVote(ctx context.Context,id *pb.ById) (*pb.PublicVote, error) {
     return ps.stg.PublicVoteS.GetByIdPublicVote(id)
 }
-func (ps *PublicVoteService) GetAllPublicVotes(ctx context.Context,f *pb.Filter) (*pb.GetAllPublicVote, error) {
-    return ps.stg.PublicVoteS.GetAllPublicVotes(f)
+func (ps *PublicVoteService) GetAllPublucVotes(ctx context.Context,f *pb.Filter) (*pb.GetAllPublicVote, error) {
+    return ps.stg.PublicVoteS.GetAllPublucVotes(f)
 }
 func (ps *PublicVoteService) FindWinner(ctx context.Context,we *pb.WhichElection) (*pb.Winner, error) {
     return ps.stg.PublicVoteS.FindWinner(we)
